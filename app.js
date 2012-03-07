@@ -60,7 +60,8 @@ app.dynamicHelpers({
 app.get('/', routes.index);
 app.get('/charts', function(req, res) {
 	return res.render('charts', {
-		title: 'Charting Data'
+		title: 'Charting Data',
+		port: app.address().port
 	});
 });
 
